@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Logi sisse</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="prax.html">Avaleht</a></li>
+		<li><a href="gal.html">Galerii</a></li>
+		<li><a href="login.html">Logi sisse</a></li>
+		<li><a href="detail.html">Detailvaade</a></li>
+		<li><a href="upload.html">Lae pilt</a></li>
+	</ul>
+	<form enctype="multipart/form-data">
+		<table>
+			<tr>
+				<td>Kasutajanimi:</td>
+				<td><input type="text" name="autor" /></td>
+			</tr>
+			<tr>
+				<td>Pealkiri:</td>
+				<td><input type="text" name="pealkiri" /></td>
+			</tr>
+			<tr>
+				<td>Suure pildi asukoht:</td>
+				<td><input type="file" name="pilt" accept="image/*"></td>
+			</tr>
+			<tr>
+				<td>Väikese pildi asukoht:</td>
+				<td><input type="file" name="piltvaike" accept="image/*"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="upload" value="Lae üles"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
