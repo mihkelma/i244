@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Kodune Ülesanne</title>
+	<style type="text/css">
+	.active { background: skyblue; padding: 10px;}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			// lehe laadimine lõpetatud. Siia funktsiooni sisse kirjutan elementide mõjutamise käsud
+			$("li").first().addClass("active");
+			var actElement = $("li").first()
+			$("#next").click(function() {
+				// eemalda kõigilt li elementidelt klass active
+				if (actElement.is(":last-child")) {
+					actElement = $("li").first();
+					$("li").removeClass("active");
+					actElement.addClass("active");
+				}
+				else {
+					actElement = $("li.active").next();
+					$("li").removeClass("active");
+					actElement.addClass("active");
+				};
+			});
+
+			$("#prev").click(function() {
+				// eemalda kõigilt li elementidelt klass active
+				if (actElement.is(":first-child")) {
+					actElement = $("li").last();
+					$("li").removeClass("active");
+					actElement.addClass("active");
+				}
+				else {
+					actElement = $("li.active").prev();
+					$("li").removeClass("active");
+					actElement.addClass("active");
+				};
+			});
+		}
+	</script>
+</head>
+<body>
+<button id="next">edasi</button>
+<button id="prev">tagasi</button>
+
+<ul>
+	<li>esimene</li>
+	<li>teine</li>
+	<li>kolmas</li>
+	<li>neljas</li>
+</ul>
+
+</body>
+</html>
