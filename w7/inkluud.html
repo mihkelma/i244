@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Include</title>
+    <style>
+    	body {
+    		background: #7BCAE1;
+    	}
+    	#wrap {
+    		margin: 0;
+    		margin-top: 20px;
+    	}
+    	p {
+    		margin: 0 auto;
+    		margin-bottom: 2px;
+    		padding: 5px;
+    		background: #fff;
+    		color: #7BCAE1;
+    		width: 50%;
+    		font-family: Arial;
+    		font-weight: bold;
+    	}
+    	img {
+    		width: 100px;
+    		display: block;
+    		text-align: center;
+    	}
+    </style>
+</head>
+<body>
+<div id="wrap">
+	<p><?php echo $elevant['nimi'];?> on <?php echo $elevant['vanus'];?> aastane  ning kaalub <?php echo $elevant['kaal'];?> tonni. Üks pilt ütleb rohkem kui tuhat sõna <img src="<?php echo $elevant['pilt'];?>" alt="<?php echo $elevant['tyyp'];?>" />
+	</p>
+</div>
+</body>
+</html>

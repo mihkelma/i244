@@ -1,2 +1,7 @@
 # Can ignore specific files
 .DS_Store
+.bash_logout
+.bashrc
+.cache/
+.profile
+.peegel.php.swp
